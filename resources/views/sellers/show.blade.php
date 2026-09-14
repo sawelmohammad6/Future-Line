@@ -236,7 +236,7 @@
             <div class="mt-8 grid grid-cols-2 gap-4 lg:grid-cols-3">
                 @foreach ($seller['gallery'] as $item)
                     <button type="button" data-gallery-item data-gallery-label="{{ $item['label'] }}" data-gallery-src="{{ $item['image'] }}" class="group relative aspect-[4/3] overflow-hidden border border-slate-200 bg-slate-100 shadow-sm">
-                        <img src="{{ $item['image'] }}" alt="{{ $item['label'] }}" loading="lazy" decoding="async" class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
+                        <img src="{{ asset($item['image']) }}" alt="{{ $item['label'] }}" loading="lazy" decoding="async" class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
                         <span class="absolute inset-0 flex items-end bg-gradient-to-t from-slate-950/60 to-transparent opacity-0 transition group-hover:opacity-100">
                             <span class="px-4 py-3 text-sm font-bold text-white">{{ $item['label'] }}</span>
                         </span>
@@ -294,7 +294,7 @@
             <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6 6 18" /></svg>
         </button>
         <figure class="max-h-full max-w-3xl">
-            <img data-lightbox-image src="" alt="" class="max-h-[80vh] w-full object-contain">
+            <img data-lightbox-image src="" alt="Selected seller gallery image" class="max-h-[80vh] w-full object-contain">
             <figcaption data-lightbox-caption class="mt-3 text-center text-sm font-semibold text-white"></figcaption>
         </figure>
     </div>

@@ -1,0 +1,27 @@
+@php
+    $items = [
+        ['Dashboard', 'home'], ['My Profile', 'user'], ['My Farm / Business', 'briefcase'], ['Verification', 'shield'],
+        ['Products', 'box'], ['Categories', 'grid'], ['Search Products', 'search'], ['Cart', 'cart'],
+        ['Orders', 'clipboard'], ['Payments', 'card'], ['Payment History', 'history'], ['Invoices', 'document'],
+        ['Order Tracking', 'truck'], ['Wishlist', 'heart'], ['Reviews', 'star'], ['Messages', 'message'],
+        ['Notifications', 'bell'], ['Support', 'help'], ['Settings', 'settings'],
+    ];
+@endphp
+
+<div data-dashboard-overlay class="fixed inset-0 z-[60] hidden bg-slate-950/35 lg:hidden"></div>
+<aside id="dashboard-sidebar" data-dashboard-sidebar class="fixed inset-y-0 left-0 z-[70] flex w-72 -translate-x-full flex-col border-r border-slate-200 bg-white shadow-2xl transition-transform duration-200 lg:sticky lg:top-[76px] lg:h-[calc(100vh-76px)] lg:translate-x-0 lg:shadow-none">
+    <div class="flex items-center justify-between border-b border-slate-200 px-5 py-5">
+        <a href="{{ route('dashboard') }}" class="min-w-0"><span class="block text-base font-bold tracking-tight text-slate-950">Future Line <span class="text-emerald-700">Trading</span></span><span class="mt-1 block text-[10px] font-bold uppercase tracking-[0.12em] text-slate-500">Buyer workspace</span></a>
+        <button type="button" data-dashboard-close class="inline-flex h-9 w-9 items-center justify-center border border-slate-200 text-slate-600 lg:hidden" aria-label="Close dashboard menu"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+    <nav class="flex-1 space-y-0.5 overflow-y-auto px-3 py-4" aria-label="Buyer dashboard navigation">
+        @foreach ($items as [$label, $icon])
+            <a href="{{ $label === 'Dashboard' ? route('dashboard') : '#' }}" @class(['flex items-center gap-3 border-l-2 px-3 py-2.5 text-sm font-semibold transition-colors', 'border-emerald-700 bg-emerald-50 text-emerald-800' => $label === 'Dashboard', 'border-transparent text-slate-600 hover:bg-slate-50 hover:text-emerald-800' => $label !== 'Dashboard'])>
+                <span class="flex h-5 w-5 shrink-0 items-center justify-center"><svg class="h-[18px] w-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    @if($icon === 'home')<path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1V10Z"/>@elseif($icon === 'user')<circle cx="12" cy="8" r="3.5"/><path d="M5 21a7 7 0 0 1 14 0"/>@elseif($icon === 'briefcase')<rect x="3" y="7" width="18" height="12" rx="1"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18M10 12v2h4v-2"/>@elseif($icon === 'shield')<path d="M12 3 5 6v5c0 4.5 3 8 7 10 4-2 7-5.5 7-10V6l-7-3Z"/><path d="m9 12 2 2 4-4"/>@elseif($icon === 'box')<path d="m3 7 9-4 9 4-9 4-9-4Zm0 0v10l9 4 9-4V7M12 11v10"/>@elseif($icon === 'grid')<rect x="4" y="4" width="6" height="6"/><rect x="14" y="4" width="6" height="6"/><rect x="4" y="14" width="6" height="6"/><rect x="14" y="14" width="6" height="6"/>@elseif($icon === 'search')<circle cx="11" cy="11" r="6"/><path d="m16 16 4 4"/>@elseif($icon === 'cart')<path d="M3 4h2l2 11h10l2-7H6M9 20h.01M17 20h.01"/>@elseif($icon === 'clipboard')<rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V3h6v1M8 10h8M8 14h8"/>@elseif($icon === 'card')<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M7 15h3"/>@elseif($icon === 'history')<path d="M3 12a9 9 0 1 0 3-6.7M3 4v5h5"/><path d="M12 7v5l3 2"/>@elseif($icon === 'document')<path d="M6 3h8l4 4v14H6V3Z"/><path d="M14 3v5h5M9 13h6M9 17h6"/>@elseif($icon === 'truck')<path d="M3 6h11v10H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="18" cy="18" r="2"/>@elseif($icon === 'heart')<path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.9-8.6a5.5 5.5 0 0 0-.1-7.8Z"/>@elseif($icon === 'star')<path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9L12 3Z"/>@elseif($icon === 'message')<path d="M20 11.5a7.5 7.5 0 0 1-8 7.5 8.7 8.7 0 0 1-3.4-.7L4 20l1.4-3.5A7.3 7.3 0 0 1 4 12a7.5 7.5 0 0 1 8-7.5 7.5 7.5 0 0 1 8 7Z"/>@elseif($icon === 'bell')<path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4"/>@elseif($icon === 'help')<circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.6 2.6 0 1 1 4.2 2c-1.2.9-1.7 1.4-1.7 3M12 17h.01"/>@else<circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1-2.2 2.2-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5v.2h-3.2v-.2a1.7 1.7 0 0 0-1-1.5 1.7 1.7 0 0 0-1.9.3l-.1.1-2.2-2.2.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H5v-3.2h.2a1.7 1.7 0 0 0 1.5-1 1.7 1.7 0 0 0-.3-1.9l-.1-.1 2.2-2.2.1.1a1.7 1.7 0 0 0 1.9.3 1.7 1.7 0 0 0 1-1.5V3.5h3.2v.2a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1 2.2 2.2-.1.1a1.7 1.7 0 0 0-.3 1.9 1.7 1.7 0 0 0 1.5 1h.2V14h-.2a1.7 1.7 0 0 0-1.5 1Z"/>@endif
+                </svg></span>{{ $label }}
+            </a>
+        @endforeach
+    </nav>
+    <div class="border-t border-slate-200 p-3"><a href="{{ route('home') }}" class="flex items-center gap-3 border-l-2 border-transparent px-3 py-2.5 text-sm font-bold text-slate-600 hover:bg-rose-50 hover:text-rose-700"><svg class="h-[18px] w-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10 17l5-5-5-5M15 12H3M12 3h7a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-7"/></svg>Logout</a></div>
+</aside>

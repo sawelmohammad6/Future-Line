@@ -40,7 +40,7 @@
                 {{-- Gallery --}}
                 <div>
                     <div class="relative border border-slate-200 bg-white p-2 shadow-sm">
-                        <img data-main-image src="{{ $product['image'] }}" alt="{{ $product['name'] }}"
+                        <img data-main-image src="{{ asset($product['image']) }}" alt="{{ $product['name'] }}"
                             class="aspect-square w-full object-cover">
                         <button type="button" data-wishlist-gallery
                             class="absolute right-4 top-4 inline-flex h-10 w-10 items-center justify-center border border-slate-200 bg-white/95 text-slate-600 shadow-sm transition-colors hover:border-emerald-300 hover:text-emerald-700"
@@ -60,10 +60,10 @@
 
                     <div class="mt-3 grid grid-cols-4 gap-3">
                         @foreach ($product['gallery'] as $image)
-                            <button type="button" data-thumb="{{ $image }}"
+                            <button type="button" data-thumb="{{ asset($image) }}"
                                 class="aspect-square overflow-hidden border-2 bg-slate-100 transition-colors @if ($loop->first) border-emerald-600 @else border-slate-200 hover:border-emerald-300 @endif"
                                 aria-label="View image {{ $loop->iteration }}">
-                                <img src="{{ $image }}" alt="" loading="lazy"
+                                <img src="{{ asset($image) }}" alt="{{ $product['name'] }} image {{ $loop->iteration }}" loading="lazy"
                                     class="h-full w-full object-cover">
                             </button>
                         @endforeach

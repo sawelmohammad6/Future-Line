@@ -326,7 +326,7 @@
                                     <div>
                                         {{-- Image Container --}}
                                         <div class="relative h-48 w-full overflow-hidden bg-slate-100">
-                                            <img src="{{ $product['image'] }}" alt="{{ $product['name'] }}" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                                            <img src="{{ asset($product['image']) }}" alt="{{ $product['name'] }}" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
                                             <span class="absolute top-3 left-3 rounded-md bg-white/90 backdrop-blur-md px-2.5 py-1 text-xs font-black text-emerald-800 shadow-xs">
                                                 {{ $product['brand'] }}
                                             </span>
@@ -455,8 +455,8 @@
 
                         <div class="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3">
                             @foreach ($company['gallery'] as $img)
-                                <div @click="selectedImage = '{{ $img['image'] }}'" class="group relative cursor-pointer overflow-hidden rounded-xl border border-slate-200 bg-slate-100 aspect-4/3">
-                                    <img src="{{ $img['image'] }}" alt="{{ $img['label'] }}" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                                <div @click="selectedImage = '{{ asset($img['image']) }}'" class="group relative cursor-pointer overflow-hidden rounded-xl border border-slate-200 bg-slate-100 aspect-4/3">
+                                    <img src="{{ asset($img['image']) }}" alt="{{ $img['label'] }}" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
                                     <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-3">
                                         <span class="text-xs font-bold text-white">{{ $img['label'] }}</span>
                                     </div>
@@ -644,7 +644,7 @@
             <button type="button" @click="selectedImage = null" class="absolute -top-10 right-0 text-white font-extrabold text-sm hover:text-slate-300">
                 ✕ Close Preview
             </button>
-            <img :src="selectedImage" class="w-full rounded-2xl max-h-[80vh] object-contain shadow-2xl">
+            <img :src="selectedImage" alt="Selected company gallery image" class="w-full rounded-2xl max-h-[80vh] object-contain shadow-2xl">
         </div>
     </div>
 

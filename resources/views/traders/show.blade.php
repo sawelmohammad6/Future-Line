@@ -177,7 +177,7 @@
                                 <div>
                                     {{-- Image & Origin Badge --}}
                                     <div class="relative h-44 w-full overflow-hidden bg-slate-100">
-                                        <img src="{{ $item['image'] }}" alt="{{ $item['name'] }}" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                                        <img src="{{ asset($item['image']) }}" alt="{{ $item['name'] }}" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
                                         <span class="absolute top-3 left-3 rounded-md bg-white/90 backdrop-blur-md px-2.5 py-1 text-xs font-black text-slate-900 shadow-xs flex items-center gap-1.5">
                                             <span>Origin:</span>
                                             <span class="font-extrabold text-blue-900">{{ $item['origin'] }}</span>

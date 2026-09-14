@@ -25,7 +25,7 @@
             'moq' => '500 KG',
             'rating' => '4.8',
             'stock' => 'In Stock',
-            'image' => 'https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=600&h=450&fit=crop',
+            'image' => config('frontend-images.products.premium_pangas'),
         ],
         [
             'name' => 'Tilapia Floating Feed',
@@ -39,7 +39,7 @@
             'moq' => '500 KG',
             'rating' => '4.7',
             'stock' => 'In Stock',
-            'image' => 'https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=600&h=450&fit=crop',
+            'image' => config('frontend-images.products.tilapia_floating'),
         ],
         [
             'name' => 'Shrimp Feed Premium',
@@ -53,7 +53,7 @@
             'moq' => '300 KG',
             'rating' => '4.9',
             'stock' => 'In Stock',
-            'image' => 'https://images.unsplash.com/photo-1615141982883-c7ad0e69fd62?w=600&h=450&fit=crop',
+            'image' => config('frontend-images.products.shrimp_premium'),
         ],
         [
             'name' => 'Shing Fish Feed',
@@ -67,7 +67,7 @@
             'moq' => '500 KG',
             'rating' => '4.6',
             'stock' => 'In Stock',
-            'image' => 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&h=450&fit=crop',
+            'image' => config('frontend-images.products.shing_fish_feed'),
         ],
         [
             'name' => 'Dairy Cattle Feed',
@@ -81,7 +81,7 @@
             'moq' => '1,000 KG',
             'rating' => '4.8',
             'stock' => 'In Stock',
-            'image' => 'https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=600&h=450&fit=crop',
+            'image' => config('frontend-images.products.dairy_cattle'),
         ],
         [
             'name' => 'Beef Cattle Feed',
@@ -95,7 +95,7 @@
             'moq' => '1,000 KG',
             'rating' => '4.5',
             'stock' => 'In Stock',
-            'image' => 'https://images.unsplash.com/photo-1527153857715-3908f2bae5e8?w=600&h=450&fit=crop',
+            'image' => config('frontend-images.products.premium_cattle'),
         ],
         [
             'name' => 'Broiler Starter Feed',
@@ -109,7 +109,7 @@
             'moq' => '500 KG',
             'rating' => '4.6',
             'stock' => 'In Stock',
-            'image' => 'https://images.unsplash.com/photo-1548013146-72479768bada?w=600&h=450&fit=crop',
+            'image' => config('frontend-images.products.broiler_starter'),
         ],
         [
             'name' => 'Layer Feed',
@@ -123,7 +123,7 @@
             'moq' => '500 KG',
             'rating' => '4.7',
             'stock' => 'In Stock',
-            'image' => 'https://images.unsplash.com/photo-1551632811-561732d1e306?w=600&h=450&fit=crop',
+            'image' => config('frontend-images.products.layer_feed'),
         ],
         [
             'name' => 'Duck Grower Feed',
@@ -137,7 +137,7 @@
             'moq' => '500 KG',
             'rating' => '4.6',
             'stock' => 'In Stock',
-            'image' => 'https://images.unsplash.com/photo-1474511320723-9a56873571b7?w=600&h=450&fit=crop',
+            'image' => config('frontend-images.products.duck_grower'),
         ],
         [
             'name' => 'Fish Meal',
@@ -151,7 +151,7 @@
             'moq' => '500 KG',
             'rating' => '4.8',
             'stock' => 'In Stock',
-            'image' => 'https://images.unsplash.com/photo-1534483509719-8c792003e543?w=600&h=450&fit=crop',
+            'image' => config('frontend-images.products.fish_meal'),
         ],
         [
             'name' => 'Soybean Meal',
@@ -165,7 +165,7 @@
             'moq' => '1,000 KG',
             'rating' => '4.9',
             'stock' => 'In Stock',
-            'image' => 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=600&h=450&fit=crop',
+            'image' => config('frontend-images.products.soybean_meal'),
         ],
         [
             'name' => 'Maize',
@@ -179,7 +179,7 @@
             'moq' => '2 Ton',
             'rating' => '4.6',
             'stock' => 'In Stock',
-            'image' => 'https://images.unsplash.com/photo-1551754655-cd27e38d2076?w=600&h=450&fit=crop',
+            'image' => config('frontend-images.products.maize'),
         ],
     ];
 @endphp

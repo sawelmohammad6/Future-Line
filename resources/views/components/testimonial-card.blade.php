@@ -6,11 +6,11 @@
     </div>
     <blockquote class="mt-5 text-base leading-7 text-slate-700">&ldquo;{{ $testimonial['review'] ?? '' }}&rdquo;</blockquote>
     <div class="mt-6 flex items-center gap-3 border-t border-slate-100 pt-5">
-        <img src="{{ $testimonial['photo'] ?? '' }}" alt="{{ $testimonial['name'] ?? 'Customer' }}" loading="lazy" decoding="async" class="h-12 w-12 rounded-full object-cover">
+        <img src="{{ asset($testimonial['photo'] ?? '') }}" alt="{{ $testimonial['name'] ?? 'Customer' }}" loading="lazy" decoding="async" class="h-12 w-12 rounded-full object-cover">
         <div class="min-w-0"><p class="truncate font-bold text-slate-950">{{ $testimonial['name'] ?? 'Customer name' }}</p><p class="truncate text-sm text-slate-500">{{ $testimonial['business'] ?? '' }}</p><p class="truncate text-xs text-slate-500">{{ $testimonial['location'] ?? '' }}</p></div>
     </div>
     <div class="mt-5 flex items-center gap-3 border-l-2 border-emerald-500 bg-slate-50 p-2.5">
-        <img src="{{ $testimonial['productImage'] ?? '' }}" alt="{{ $testimonial['product'] ?? 'Product' }}" loading="lazy" decoding="async" class="h-9 w-9 object-cover">
+        <img src="{{ asset($testimonial['productImage'] ?? '') }}" alt="{{ $testimonial['product'] ?? 'Product' }}" loading="lazy" decoding="async" class="h-9 w-9 object-cover">
         <div><p class="text-[10px] font-bold uppercase tracking-wide text-slate-500">Product Used</p><p class="text-xs font-semibold text-slate-700">{{ $testimonial['product'] ?? '' }}</p></div>
     </div>
 </article>
