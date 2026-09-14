@@ -1,7 +1,7 @@
 @props(['material' => []])
 <article class="group flex h-full flex-col overflow-hidden border border-slate-200 bg-white shadow-sm transition duration-200 hover:-translate-y-1 hover:border-emerald-200 hover:shadow-lg hover:shadow-emerald-950/5">
     <div class="relative aspect-[4/3] overflow-hidden bg-slate-100">
-        <img src="{{ $material['image'] ?? '' }}" alt="{{ $material['name'] ?? 'Raw material' }}" class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
+        <img src="{{ $material['image'] ?? '' }}" alt="{{ $material['name'] ?? 'Raw material' }}" loading="lazy" decoding="async" class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
         <span class="absolute left-3 top-3 inline-flex items-center gap-1 border border-emerald-100 bg-white/95 px-2 py-1 text-[10px] font-bold text-emerald-800"><svg class="h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m5 12 4 4L19 6"/></svg>Verified Supplier</span>
     </div>
     <div class="flex flex-1 flex-col p-4">

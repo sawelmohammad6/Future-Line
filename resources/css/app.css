@@ -11,7 +11,29 @@
 }
 
 @layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
     body {
         @apply bg-slate-50 text-slate-900 antialiased;
+    }
+
+    a:focus-visible,
+    button:focus-visible,
+    input:focus-visible {
+        @apply outline-2 outline-offset-2 outline-emerald-600;
+    }
+}
+
+@layer components {
+    .product-list-view article {
+        flex-direction: row;
+    }
+
+    .product-list-view .product-image {
+        width: 260px;
+        min-height: 100%;
+        aspect-ratio: auto;
     }
 }

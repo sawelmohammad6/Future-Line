@@ -220,7 +220,7 @@
         </div>
     </section>
 
-    <section class="border-y border-slate-200 bg-slate-50 py-16 sm:py-20 lg:py-24">
+    <section id="featured-products" class="border-y border-slate-200 bg-slate-50 py-16 sm:py-20 lg:py-24">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
                 <div class="max-w-2xl">
@@ -289,7 +289,7 @@
         </div>
     </section>
 
-    <section class="border-t border-slate-200 bg-slate-50 py-16 sm:py-20 lg:py-24">
+    <section id="importers-exporters" class="border-t border-slate-200 bg-slate-50 py-16 sm:py-20 lg:py-24">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div class="mx-auto max-w-2xl text-center">
                 <x-section-heading eyebrow="International Trade">Importers &amp; Exporters</x-section-heading>
@@ -304,7 +304,7 @@
         </div>
     </section>
 
-    <section class="bg-white py-16 sm:py-20 lg:py-24">
+    <section id="raw-materials" class="bg-white py-16 sm:py-20 lg:py-24">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
                 <div class="max-w-2xl"><x-section-heading eyebrow="Bulk Ingredient Supply">Feed Raw Materials Marketplace</x-section-heading><p class="mt-4 text-base leading-7 text-slate-600">Source quality raw materials from verified suppliers, manufacturers and importers.</p></div>
@@ -320,7 +320,7 @@
 
     <x-cta-banner title="Need Feed Ingredients in Bulk?" description="Connect with verified suppliers and source the right quantity, grade and quality for your business." :primary-href="route('companies.index')" :secondary-href="route('contact')" />
 
-    <section class="bg-white py-16 sm:py-20 lg:py-24">
+    <section id="success-stories" class="bg-white py-16 sm:py-20 lg:py-24">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div class="mx-auto max-w-2xl text-center"><x-section-heading eyebrow="Trusted By Trade Partners">Farmer Success Stories</x-section-heading><p class="mt-4 text-base leading-7 text-slate-600">Real experiences from farmers and businesses using products sourced through Future Line Trading.</p></div>
             <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
@@ -344,7 +344,7 @@
         </div>
     </section>
 
-    <section class="bg-white py-16 sm:py-20 lg:py-24">
+    <section id="how-it-works" class="bg-white py-16 sm:py-20 lg:py-24">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div class="mx-auto max-w-2xl text-center"><x-section-heading eyebrow="Simple, Clear, Verified">How Future Line Trading Works</x-section-heading><p class="mt-4 text-base leading-7 text-slate-600">A simple and transparent way to discover trusted businesses and complete verified trade.</p></div>
             <div class="relative mt-12"><div class="absolute left-[10%] right-[10%] top-6 hidden h-px bg-emerald-200 lg:block"></div><div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-5 lg:gap-2">@foreach ($processSteps as $processStep)<x-process-step :step="$processStep['step']" :title="$processStep['title']" :description="$processStep['description']" />@endforeach</div></div>

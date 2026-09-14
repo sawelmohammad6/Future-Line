@@ -1,7 +1,7 @@
 @props(['category' => []])
 <a href="{{ route('categories.index') }}" class="group block overflow-hidden border border-slate-200 bg-white shadow-sm transition duration-200 hover:-translate-y-1 hover:border-emerald-300 hover:shadow-lg hover:shadow-emerald-950/5">
     <div class="relative aspect-[16/9] overflow-hidden bg-slate-100">
-        <img src="{{ $category['image'] ?? '' }}" alt="{{ $category['name'] ?? 'Category' }}" class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
+        <img src="{{ $category['image'] ?? '' }}" alt="{{ $category['name'] ?? 'Category' }}" loading="lazy" decoding="async" class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
         <span class="absolute right-3 top-3 border border-white/70 bg-white/95 px-2.5 py-1 text-xs font-bold text-emerald-800">{{ $category['count'] ?? '0' }} products</span>
     </div>
     <div class="p-5">

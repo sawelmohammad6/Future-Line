@@ -1,5 +1,41 @@
-<footer class="border-t border-slate-200 bg-white">
-    <div class="mx-auto max-w-7xl px-4 py-6 text-sm text-slate-500 sm:px-6 lg:px-8">
-        <p>&copy; {{ date('Y') }} Future Line Trading. Brokerage, agent and commission services.</p>
+<footer id="footer" class="border-t border-emerald-900 bg-slate-950 text-slate-300">
+    <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8 lg:py-16">
+        <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-[1.35fr_0.9fr_0.9fr_1.1fr] lg:gap-8">
+            <div>
+                <a href="{{ route('home') }}" class="inline-block" aria-label="Future Line Trading home">
+                    <span class="block text-xl font-bold tracking-tight text-white">Future Line <span class="text-emerald-400">Trading</span></span>
+                    <span class="mt-1 block text-xs font-semibold tracking-wide text-emerald-300">Brokerage <span class="px-0.5">•</span> Agent <span class="px-0.5">•</span> Commission</span>
+                </a>
+                <p class="mt-5 max-w-sm text-sm leading-6 text-slate-400">Connecting verified businesses, buyers, sellers, suppliers, manufacturers, importers and exporters through a professional B2B marketplace.</p>
+                <p class="mt-4 text-sm font-medium leading-6 text-slate-200">Connecting Verified Businesses, Building Trusted Trade.</p>
+                <div class="mt-6 flex items-center gap-3">
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="inline-flex h-9 w-9 items-center justify-center border border-slate-700 text-slate-300 transition-colors hover:border-emerald-500 hover:text-emerald-400" aria-label="Future Line Trading on Facebook"><svg class="h-4 w-4 fill-current" viewBox="0 0 24 24"><path d="M13.6 21v-8h2.7l.4-3h-3.1V8.1c0-.9.3-1.5 1.6-1.5h1.7V3.9c-.3 0-1.3-.1-2.4-.1-2.4 0-4.1 1.5-4.1 4.2v2H7.7v3h2.7v8h3.2Z"/></svg></a>
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="inline-flex h-9 w-9 items-center justify-center border border-slate-700 text-slate-300 transition-colors hover:border-emerald-500 hover:text-emerald-400" aria-label="Future Line Trading on LinkedIn"><svg class="h-4 w-4 fill-current" viewBox="0 0 24 24"><path d="M6.5 8.3H3.3V21h3.2V8.3ZM4.9 3A1.9 1.9 0 1 0 5 6.8 1.9 1.9 0 0 0 4.9 3ZM21 13.7c0-3.8-2-5.6-4.7-5.6-2.2 0-3.1 1.2-3.7 2v-1.8H9.4V21h3.2v-6.3c0-1.7.3-3.3 2.4-3.3 2.1 0 2.1 1.9 2.1 3.4V21h3.2v-7.3Z"/></svg></a>
+                    <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" class="inline-flex h-9 w-9 items-center justify-center border border-slate-700 text-slate-300 transition-colors hover:border-emerald-500 hover:text-emerald-400" aria-label="Future Line Trading on YouTube"><svg class="h-4 w-4 fill-current" viewBox="0 0 24 24"><path d="M21.6 7.2a3 3 0 0 0-2.1-2.1C17.7 4.6 12 4.6 12 4.6s-5.7 0-7.5.5a3 3 0 0 0-2.1 2.1C2 9 2 12 2 12s0 3 .4 4.8a3 3 0 0 0 2.1 2.1c1.8.5 7.5.5 7.5.5s5.7 0 7.5-.5a3 3 0 0 0 2.1-2.1C22 15 22 12 22 12s0-3-.4-4.8ZM10 15.5v-7l6 3.5-6 3.5Z"/></svg></a>
+                    <a href="https://www.whatsapp.com/" target="_blank" rel="noopener noreferrer" class="inline-flex h-9 w-9 items-center justify-center border border-slate-700 text-slate-300 transition-colors hover:border-emerald-500 hover:text-emerald-400" aria-label="Future Line Trading on WhatsApp"><svg class="h-4 w-4 fill-current" viewBox="0 0 24 24"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.5 0 .2 5.3.2 11.9c0 2.1.6 4.2 1.6 6L0 24l6.3-1.7a12 12 0 0 0 5.8 1.5h.1c6.6 0 11.9-5.3 11.9-11.9 0-3.2-1.3-6.1-3.5-8.4h-.1ZM12.1 21.8c-1.9 0-3.7-.5-5.3-1.4l-.4-.2-3.7 1 1-3.6-.2-.4a9.8 9.8 0 0 1-1.5-5.3c0-5.5 4.5-9.9 10-9.9 2.7 0 5.2 1 7 2.9a9.9 9.9 0 0 1-7 16.9h.1Zm5.5-7.4c-.3-.2-1.8-.9-2.1-1s-.5-.2-.7.2-.8 1-.9 1.2c-.2.2-.3.3-.6.1a8.1 8.1 0 0 1-2.5-1.6 9.3 9.3 0 0 1-1.7-2.2c-.2-.3 0-.4.1-.6l.5-.5.2-.5c.1-.2 0-.4 0-.5l-1-2.3c-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.5.1-.8.4s-1 1-1 2.4 1 2.8 1.1 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2.1-1.3s.3-1.2.2-1.3l-.4-.2Z"/></svg></a>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="text-sm font-bold uppercase tracking-[0.14em] text-white">Marketplace</h2>
+                <ul class="mt-5 space-y-3 text-sm">
+                    <li><a href="{{ route('products.index') }}" class="hover:text-emerald-400">Products</a></li><li><a href="{{ route('categories.index') }}" class="hover:text-emerald-400">Categories</a></li><li><a href="{{ route('home') }}#featured-products" class="hover:text-emerald-400">Featured Products</a></li><li><a href="{{ route('sellers.index') }}" class="hover:text-emerald-400">Verified Sellers</a></li><li><a href="{{ route('companies.index') }}" class="hover:text-emerald-400">Verified Companies</a></li><li><a href="{{ route('home') }}#importers-exporters" class="hover:text-emerald-400">Importers &amp; Exporters</a></li><li><a href="{{ route('home') }}#raw-materials" class="hover:text-emerald-400">Feed Raw Materials</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h2 class="text-sm font-bold uppercase tracking-[0.14em] text-white">Business</h2>
+                <ul class="mt-5 space-y-3 text-sm"><li><a href="{{ route('register') }}" class="hover:text-emerald-400">Become a Seller</a></li><li><a href="{{ route('register') }}" class="hover:text-emerald-400">Become a Reseller</a></li><li><a href="{{ route('home') }}#success-stories" class="hover:text-emerald-400">Farmer Success Stories</a></li><li><a href="{{ route('home') }}#how-it-works" class="hover:text-emerald-400">How It Works</a></li><li><a href="{{ route('about') }}" class="hover:text-emerald-400">About Us</a></li><li><a href="{{ route('contact') }}" class="hover:text-emerald-400">Contact Us</a></li><li><a href="{{ route('contact') }}" class="hover:text-emerald-400">FAQ</a></li></ul>
+            </div>
+
+            <div>
+                <h2 class="text-sm font-bold uppercase tracking-[0.14em] text-white">Support &amp; Legal</h2>
+                <ul class="mt-5 space-y-3 text-sm"><li><a href="{{ route('contact') }}" class="hover:text-emerald-400">Help &amp; Support</a></li><li><a href="{{ route('about') }}" class="hover:text-emerald-400">Terms &amp; Conditions</a></li><li><a href="{{ route('about') }}" class="hover:text-emerald-400">Privacy Policy</a></li><li><a href="{{ route('about') }}" class="hover:text-emerald-400">Refund Policy</a></li><li><a href="{{ route('about') }}" class="hover:text-emerald-400">Cancellation Policy</a></li><li><a href="{{ route('about') }}" class="hover:text-emerald-400">Seller Agreement</a></li><li><a href="{{ route('about') }}" class="hover:text-emerald-400">Buyer Agreement</a></li><li><a href="{{ route('about') }}" class="hover:text-emerald-400">Verification Policy</a></li><li><a href="{{ route('about') }}" class="hover:text-emerald-400">Dispute Resolution Policy</a></li></ul>
+                <div class="mt-7 border-t border-slate-800 pt-5 text-sm"><p class="flex gap-2"><span class="font-semibold text-slate-200">Phone:</span><span>+880 XXX XXX XXXX</span></p><p class="mt-2 flex gap-2"><span class="font-semibold text-slate-200">Email:</span><a href="mailto:info@futurelinetrading.com" class="hover:text-emerald-400">info@futurelinetrading.com</a></p><p class="mt-2 flex gap-2"><span class="font-semibold text-slate-200">Location:</span><span>Bangladesh</span></p></div>
+            </div>
+        </div>
+    </div>
+    <div class="border-t border-slate-800"><div class="mx-auto flex max-w-7xl flex-col gap-2 px-4 py-5 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8"><div><p>&copy; 2026 Future Line Trading. All rights reserved.</p><p class="mt-1 text-emerald-400/80">Brokerage <span class="px-0.5">•</span> Agent <span class="px-0.5">•</span> Commission</p></div><p><span class="font-semibold text-emerald-400">বাংলা</span><span class="px-2 text-slate-700">|</span>English</p></div></div>
+</footer>
     </div>
 </footer>
