@@ -1,0 +1,1 @@
+<nav aria-label="Pagination" class="flex items-center gap-2 text-sm"><span class="border border-slate-200 px-3 py-2 text-slate-400">Previous</span><span class="border border-emerald-700 bg-emerald-700 px-3 py-2 text-white">1</span><span class="border border-slate-200 px-3 py-2 text-slate-600">Next</span></nav>
