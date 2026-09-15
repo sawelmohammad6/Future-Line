@@ -2,10 +2,7 @@
     <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8 lg:py-16">
         <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-[1.35fr_0.9fr_0.9fr_1.1fr] lg:gap-8">
             <div>
-                <a href="{{ route('home') }}" class="inline-block" aria-label="Future Line Trading home">
-                    <span class="block text-xl font-bold tracking-tight text-white">Future Line <span class="text-emerald-400">Trading</span></span>
-                    <span class="mt-1 block text-xs font-semibold tracking-wide text-emerald-300">Brokerage <span class="px-0.5">•</span> Agent <span class="px-0.5">•</span> Commission</span>
-                </a>
+                <x-logo variant="dark" brand-class="text-xl font-bold tracking-tight text-white" tagline-class="mt-1 block text-xs font-semibold tracking-wide text-emerald-300" />
                 <p class="mt-5 max-w-sm text-sm leading-6 text-slate-400">Connecting verified businesses, buyers, sellers, suppliers, manufacturers, importers and exporters through a professional B2B marketplace.</p>
                 <p class="mt-4 text-sm font-medium leading-6 text-slate-200">Connecting Verified Businesses, Building Trusted Trade.</p>
                 <div class="mt-6 flex items-center gap-3">
@@ -17,25 +14,25 @@
             </div>
 
             <div>
-                <h2 class="text-sm font-bold uppercase tracking-[0.14em] text-white">Marketplace</h2>
+                <h2 class="text-sm font-bold uppercase tracking-[0.14em] text-white">{{ __('footer.marketplace') }}</h2>
                 <ul class="mt-5 space-y-3 text-sm">
                     <li><a href="{{ route('products.index') }}" class="hover:text-emerald-400">Products</a></li><li><a href="{{ route('categories.index') }}" class="hover:text-emerald-400">Categories</a></li><li><a href="{{ route('home') }}#featured-products" class="hover:text-emerald-400">Featured Products</a></li><li><a href="{{ route('sellers.index') }}" class="hover:text-emerald-400">Verified Sellers</a></li><li><a href="{{ route('companies.index') }}" class="hover:text-emerald-400">Verified Companies</a></li><li><a href="{{ route('home') }}#importers-exporters" class="hover:text-emerald-400">Importers &amp; Exporters</a></li><li><a href="{{ route('home') }}#raw-materials" class="hover:text-emerald-400">Feed Raw Materials</a></li>
                 </ul>
             </div>
 
             <div>
-                <h2 class="text-sm font-bold uppercase tracking-[0.14em] text-white">Business</h2>
+                <h2 class="text-sm font-bold uppercase tracking-[0.14em] text-white">{{ __('footer.business') }}</h2>
                 <ul class="mt-5 space-y-3 text-sm"><li><a href="{{ route('register') }}" class="hover:text-emerald-400">Become a Seller</a></li><li><a href="{{ route('register') }}" class="hover:text-emerald-400">Become a Reseller</a></li><li><a href="{{ route('home') }}#success-stories" class="hover:text-emerald-400">Farmer Success Stories</a></li><li><a href="{{ route('home') }}#how-it-works" class="hover:text-emerald-400">How It Works</a></li><li><a href="{{ route('about') }}" class="hover:text-emerald-400">About Us</a></li><li><a href="{{ route('contact') }}" class="hover:text-emerald-400">Contact Us</a></li><li><a href="{{ route('contact') }}" class="hover:text-emerald-400">FAQ</a></li></ul>
             </div>
 
             <div>
-                <h2 class="text-sm font-bold uppercase tracking-[0.14em] text-white">Support &amp; Legal</h2>
+                <h2 class="text-sm font-bold uppercase tracking-[0.14em] text-white">{{ __('footer.support_legal') }}</h2>
                 <ul class="mt-5 space-y-3 text-sm"><li><a href="{{ route('contact') }}" class="hover:text-emerald-400">Help &amp; Support</a></li><li><a href="{{ route('about') }}" class="hover:text-emerald-400">Terms &amp; Conditions</a></li><li><a href="{{ route('about') }}" class="hover:text-emerald-400">Privacy Policy</a></li><li><a href="{{ route('about') }}" class="hover:text-emerald-400">Refund Policy</a></li><li><a href="{{ route('about') }}" class="hover:text-emerald-400">Cancellation Policy</a></li><li><a href="{{ route('about') }}" class="hover:text-emerald-400">Seller Agreement</a></li><li><a href="{{ route('about') }}" class="hover:text-emerald-400">Buyer Agreement</a></li><li><a href="{{ route('about') }}" class="hover:text-emerald-400">Verification Policy</a></li><li><a href="{{ route('about') }}" class="hover:text-emerald-400">Dispute Resolution Policy</a></li></ul>
-                <div class="mt-7 border-t border-slate-800 pt-5 text-sm"><p class="flex gap-2"><span class="font-semibold text-slate-200">Phone:</span><span>+880 XXX XXX XXXX</span></p><p class="mt-2 flex gap-2"><span class="font-semibold text-slate-200">Email:</span><a href="mailto:info@futurelinetrading.com" class="hover:text-emerald-400">info@futurelinetrading.com</a></p><p class="mt-2 flex gap-2"><span class="font-semibold text-slate-200">Location:</span><span>Bangladesh</span></p></div>
+                <div class="mt-7 border-t border-slate-800 pt-5 text-sm"><p class="flex gap-2"><span class="font-semibold text-slate-200">{{ __('common.phone') }}</span><span>+880 XXX XXX XXXX</span></p><p class="mt-2 flex gap-2"><span class="font-semibold text-slate-200">{{ __('common.email') }}</span><a href="mailto:info@futurelinetrading.com" class="hover:text-emerald-400">info@futurelinetrading.com</a></p><p class="mt-2 flex gap-2"><span class="font-semibold text-slate-200">{{ __('common.location') }}:</span><span>{{ __('common.bangladesh') }}</span></p></div>
             </div>
         </div>
     </div>
-    <div class="border-t border-slate-800"><div class="mx-auto flex max-w-7xl flex-col gap-2 px-4 py-5 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8"><div><p>&copy; 2026 Future Line Trading. All rights reserved.</p><p class="mt-1 text-emerald-400/80">Brokerage <span class="px-0.5">•</span> Agent <span class="px-0.5">•</span> Commission</p></div><p><span class="font-semibold text-emerald-400">বাংলা</span><span class="px-2 text-slate-700">|</span>English</p></div></div>
+    <div class="border-t border-slate-800"><div class="mx-auto flex max-w-7xl flex-col gap-2 px-4 py-5 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8"><div><p>&copy; 2026 Future Line Trading. {{ __('common.all_rights_reserved') }}</p><p class="mt-1 text-emerald-400/80">Brokerage <span class="px-0.5">•</span> Agent <span class="px-0.5">•</span> Commission</p></div><p><a href="{{ route('language.switch', 'bn') }}" @class(['font-semibold', 'text-emerald-400' => app()->isLocale('bn'), 'text-slate-500' => ! app()->isLocale('bn')])>{{ __('common.language_bangla') }}</a><span class="px-2 text-slate-700">|</span><a href="{{ route('language.switch', 'en') }}" @class(['font-semibold', 'text-emerald-400' => app()->isLocale('en'), 'text-slate-500' => ! app()->isLocale('en')])>{{ __('common.language_english') }}</a></p></div></div>
 </footer>
     </div>
 </footer>

@@ -1,0 +1,25 @@
+<?php
+
+return [
+    'home' => 'হোম', 'products' => 'পণ্য', 'categories' => 'ক্যাটাগরি',
+    'sellers' => 'বিক্রেতা', 'companies' => 'কোম্পানি', 'about' => 'আমাদের সম্পর্কে',
+    'contact_us' => 'যোগাযোগ করুন', 'login' => 'লগইন', 'register' => 'নিবন্ধন',
+    'become_seller' => 'বিক্রেতা হোন', 'become_reseller' => 'রিসেলার হোন',
+    'search' => 'খুঁজুন', 'search_products' => 'পণ্য খুঁজুন', 'wishlist' => 'পছন্দের তালিকা',
+    'cart' => 'কার্ট', 'view_all' => 'সব দেখুন', 'view_products' => 'পণ্য দেখুন',
+    'view_product' => 'পণ্য দেখুন', 'explore_products' => 'পণ্য দেখুন',
+    'explore_category' => 'ক্যাটাগরি দেখুন', 'learn_more' => 'আরও জানুন',
+    'verified_business' => 'যাচাইকৃত ব্যবসা', 'verified_seller' => 'যাচাইকৃত বিক্রেতা',
+    'verified_product' => 'যাচাইকৃত পণ্য', 'rating' => 'রেটিং', 'location' => 'অবস্থান',
+    'price' => 'মূল্য', 'quantity' => 'পরিমাণ', 'status' => 'অবস্থা', 'date' => 'তারিখ',
+    'action' => 'কাজ', 'brand' => 'ব্র্যান্ড', 'seller' => 'বিক্রেতা', 'buyer' => 'ক্রেতা',
+    'manufacturer' => 'প্রস্তুতকারক', 'supplier' => 'সরবরাহকারী', 'importer' => 'আমদানিকারক',
+    'exporter' => 'রপ্তানিকারক', 'in_stock' => 'স্টকে আছে', 'out_of_stock' => 'স্টক নেই',
+    'add_to_cart' => 'কার্টে যোগ করুন', 'buy_now' => 'এখনই কিনুন', 'request_quote' => 'মূল্য প্রস্তাব চাইুন',
+    'contact_seller' => 'বিক্রেতার সঙ্গে যোগাযোগ', 'apply_filters' => 'ফিল্টার প্রয়োগ করুন', 'clear_all' => 'সব মুছুন',
+    'all_rights_reserved' => 'সর্বস্বত্ব সংরক্ষিত।', 'phone' => 'ফোন:', 'email' => 'ইমেইল:',
+    'language_bangla' => 'বাংলা', 'language_english' => 'English', 'or' => 'অথবা', 'more' => 'আরও', 'subcategories' => 'উপক্যাটাগরি',
+    'back_to_site' => 'সাইটে ফিরে যান', 'dashboard' => 'ড্যাশবোর্ড', 'orders' => 'অর্ডার',
+    'payments' => 'পেমেন্ট', 'messages' => 'বার্তা', 'notifications' => 'বিজ্ঞপ্তি',
+    'settings' => 'সেটিংস', 'logout' => 'লগআউট', 'country' => 'দেশ', 'location' => 'অবস্থান', 'bangladesh' => 'বাংলাদেশ',
+];

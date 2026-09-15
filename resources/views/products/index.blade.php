@@ -25,7 +25,7 @@
             'moq' => '500 KG',
             'rating' => '4.8',
             'stock' => 'In Stock',
-            'image' => config('frontend-images.products.premium_pangas'),
+            'image' => frontend_image('products.premium_pangas'),
         ],
         [
             'name' => 'Tilapia Floating Feed',
@@ -39,7 +39,7 @@
             'moq' => '500 KG',
             'rating' => '4.7',
             'stock' => 'In Stock',
-            'image' => config('frontend-images.products.tilapia_floating'),
+            'image' => frontend_image('products.tilapia_floating'),
         ],
         [
             'name' => 'Shrimp Feed Premium',
@@ -53,7 +53,7 @@
             'moq' => '300 KG',
             'rating' => '4.9',
             'stock' => 'In Stock',
-            'image' => config('frontend-images.products.shrimp_premium'),
+            'image' => frontend_image('products.shrimp_premium'),
         ],
         [
             'name' => 'Shing Fish Feed',
@@ -67,7 +67,7 @@
             'moq' => '500 KG',
             'rating' => '4.6',
             'stock' => 'In Stock',
-            'image' => config('frontend-images.products.shing_fish_feed'),
+            'image' => frontend_image('products.shing_fish_feed'),
         ],
         [
             'name' => 'Dairy Cattle Feed',
@@ -81,7 +81,7 @@
             'moq' => '1,000 KG',
             'rating' => '4.8',
             'stock' => 'In Stock',
-            'image' => config('frontend-images.products.dairy_cattle'),
+            'image' => frontend_image('products.dairy_cattle'),
         ],
         [
             'name' => 'Beef Cattle Feed',
@@ -95,7 +95,7 @@
             'moq' => '1,000 KG',
             'rating' => '4.5',
             'stock' => 'In Stock',
-            'image' => config('frontend-images.products.premium_cattle'),
+            'image' => frontend_image('products.premium_cattle'),
         ],
         [
             'name' => 'Broiler Starter Feed',
@@ -109,7 +109,7 @@
             'moq' => '500 KG',
             'rating' => '4.6',
             'stock' => 'In Stock',
-            'image' => config('frontend-images.products.broiler_starter'),
+            'image' => frontend_image('products.broiler_starter'),
         ],
         [
             'name' => 'Layer Feed',
@@ -123,7 +123,7 @@
             'moq' => '500 KG',
             'rating' => '4.7',
             'stock' => 'In Stock',
-            'image' => config('frontend-images.products.layer_feed'),
+            'image' => frontend_image('products.layer_feed'),
         ],
         [
             'name' => 'Duck Grower Feed',
@@ -137,7 +137,7 @@
             'moq' => '500 KG',
             'rating' => '4.6',
             'stock' => 'In Stock',
-            'image' => config('frontend-images.products.duck_grower'),
+            'image' => frontend_image('products.duck_grower'),
         ],
         [
             'name' => 'Fish Meal',
@@ -151,7 +151,7 @@
             'moq' => '500 KG',
             'rating' => '4.8',
             'stock' => 'In Stock',
-            'image' => config('frontend-images.products.fish_meal'),
+            'image' => frontend_image('products.fish_meal'),
         ],
         [
             'name' => 'Soybean Meal',
@@ -165,22 +165,9 @@
             'moq' => '1,000 KG',
             'rating' => '4.9',
             'stock' => 'In Stock',
-            'image' => config('frontend-images.products.soybean_meal'),
+            'image' => frontend_image('products.soybean_meal'),
         ],
-        [
-            'name' => 'Maize',
-            'slug' => 'maize',
-            'brand' => 'AgroSource',
-            'grade' => 'Grade 2',
-            'seller' => 'Agro Source Bangladesh',
-            'location' => 'Narayanganj, Bangladesh',
-            'price' => '৳38 / KG',
-            'priceTon' => '৳38,000',
-            'moq' => '2 Ton',
-            'rating' => '4.6',
-            'stock' => 'In Stock',
-            'image' => config('frontend-images.products.maize'),
-        ],
+
     ];
 @endphp
 

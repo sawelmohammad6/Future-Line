@@ -1,7 +1,7 @@
 @props(['from' => 1, 'to' => 12, 'total' => 120, 'sortOptions' => [], 'view' => 'grid'])
 
 <div class="flex flex-wrap items-center justify-between gap-3 border border-slate-200 bg-white px-4 py-3">
-    <p class="text-sm text-slate-600">Showing <span class="font-bold text-slate-900">{{ $from }}</span>–<span class="font-bold text-slate-900">{{ $to }}</span> of <span class="font-bold text-slate-900">{{ $total }}</span> products</p>
+    <p class="text-sm text-slate-600">{{ __('products.showing_products', ['from' => $from, 'to' => $to, 'total' => $total]) }}</p>
     <div class="flex items-center gap-3">
         <label for="sort-by" class="sr-only">Sort by</label>
         <select id="sort-by" class="border border-slate-200 bg-white px-3 py-2 text-sm text-slate-700 focus:border-emerald-500 focus:outline-none">

@@ -11,7 +11,7 @@
 <div data-dashboard-overlay class="fixed inset-0 z-[60] hidden bg-slate-950/35 lg:hidden"></div>
 <aside id="dashboard-sidebar" data-dashboard-sidebar class="fixed inset-y-0 left-0 z-[70] flex w-72 -translate-x-full flex-col border-r border-slate-200 bg-white shadow-2xl transition-transform duration-200 lg:sticky lg:top-[76px] lg:h-[calc(100vh-76px)] lg:translate-x-0 lg:shadow-none">
     <div class="flex items-center justify-between border-b border-slate-200 px-5 py-5">
-        <a href="{{ route('dashboard') }}" class="min-w-0"><span class="block text-base font-bold tracking-tight text-slate-950">Future Line <span class="text-emerald-700">Trading</span></span><span class="mt-1 block text-[10px] font-bold uppercase tracking-[0.12em] text-slate-500">Buyer workspace</span></a>
+        <x-logo :href="route('dashboard')" class="min-w-0" variant="light" tagline="Buyer workspace" brand-class="text-base font-bold tracking-tight text-slate-950" tagline-class="mt-1 block text-[10px] font-bold uppercase tracking-[0.12em] text-slate-500" />
         <button type="button" data-dashboard-close class="inline-flex h-9 w-9 items-center justify-center border border-slate-200 text-slate-600 lg:hidden" aria-label="Close dashboard menu"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
     </div>
     <nav class="flex-1 space-y-0.5 overflow-y-auto px-3 py-4" aria-label="Buyer dashboard navigation">

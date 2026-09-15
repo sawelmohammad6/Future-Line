@@ -236,7 +236,7 @@
             <div class="mt-8 grid grid-cols-2 gap-4 lg:grid-cols-3">
                 @foreach ($seller['gallery'] as $item)
                     <button type="button" data-gallery-item data-gallery-label="{{ $item['label'] }}" data-gallery-src="{{ $item['image'] }}" class="group relative aspect-[4/3] overflow-hidden border border-slate-200 bg-slate-100 shadow-sm">
-                        <img src="{{ asset($item['image']) }}" alt="{{ $item['label'] }}" loading="lazy" decoding="async" class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
+                        <img src="{{ frontend_image_value($item['image']) }}" alt="{{ $item['label'] }}" loading="lazy" decoding="async" class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
                         <span class="absolute inset-0 flex items-end bg-gradient-to-t from-slate-950/60 to-transparent opacity-0 transition group-hover:opacity-100">
                             <span class="px-4 py-3 text-sm font-bold text-white">{{ $item['label'] }}</span>
                         </span>

@@ -1,0 +1,25 @@
+<?php
+
+return [
+    'home' => 'Home', 'products' => 'Products', 'categories' => 'Categories',
+    'sellers' => 'Sellers', 'companies' => 'Companies', 'about' => 'About',
+    'contact_us' => 'Contact Us', 'login' => 'Login', 'register' => 'Register',
+    'become_seller' => 'Become a Seller', 'become_reseller' => 'Become a Reseller',
+    'search' => 'Search', 'search_products' => 'Search Products', 'wishlist' => 'Wishlist',
+    'cart' => 'Cart', 'view_all' => 'View All', 'view_products' => 'View Products',
+    'view_product' => 'View Product', 'explore_products' => 'Explore Products',
+    'explore_category' => 'Explore Category', 'learn_more' => 'Learn More',
+    'verified_business' => 'Verified Business', 'verified_seller' => 'Verified Seller',
+    'verified_product' => 'Verified Product', 'rating' => 'Rating', 'location' => 'Location',
+    'price' => 'Price', 'quantity' => 'Quantity', 'status' => 'Status', 'date' => 'Date',
+    'action' => 'Action', 'brand' => 'Brand', 'seller' => 'Seller', 'buyer' => 'Buyer',
+    'manufacturer' => 'Manufacturer', 'supplier' => 'Supplier', 'importer' => 'Importer',
+    'exporter' => 'Exporter', 'in_stock' => 'In Stock', 'out_of_stock' => 'Out of Stock',
+    'add_to_cart' => 'Add to Cart', 'buy_now' => 'Buy Now', 'request_quote' => 'Request a Quote',
+    'contact_seller' => 'Contact Seller', 'apply_filters' => 'Apply Filters', 'clear_all' => 'Clear All',
+    'all_rights_reserved' => 'All rights reserved.', 'phone' => 'Phone:', 'email' => 'Email:',
+    'language_bangla' => 'বাংলা', 'language_english' => 'English', 'or' => 'OR', 'more' => 'more', 'subcategories' => 'Subcategories',
+    'back_to_site' => 'Back to site', 'dashboard' => 'Dashboard', 'orders' => 'Orders',
+    'payments' => 'Payments', 'messages' => 'Messages', 'notifications' => 'Notifications',
+    'settings' => 'Settings', 'logout' => 'Logout', 'country' => 'Country', 'location' => 'Location', 'bangladesh' => 'Bangladesh',
+];

@@ -1,8 +1,10 @@
 @props(['product' => []])
 
 <article class="group flex h-full flex-col overflow-hidden border border-slate-200 bg-white shadow-sm transition duration-200 hover:-translate-y-1 hover:border-emerald-200 hover:shadow-lg hover:shadow-emerald-950/5">
-    <div class="product-image relative aspect-[4/3] overflow-hidden bg-slate-100">
-        <img src="{{ asset($product['image'] ?? '') }}" alt="{{ $product['name'] ?? 'Product' }}" loading="lazy" decoding="async" class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
+    <div class="product-image relative bg-white">
+        <div class="flex h-52 items-center justify-center bg-white p-4">
+            <img src="{{ frontend_image_value($product['image'] ?? '') }}" alt="{{ $product['name'] ?? 'Product' }}" loading="lazy" decoding="async" class="h-full w-full object-contain">
+        </div>
         <button type="button" class="absolute right-3 top-3 inline-flex h-9 w-9 items-center justify-center border border-slate-200 bg-white/95 text-slate-600 shadow-sm transition-colors hover:border-emerald-300 hover:text-emerald-700" aria-label="Add {{ $product['name'] ?? 'product' }} to wishlist">
             <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.9-8.6a5.5 5.5 0 0 0-.1-7.8Z"/></svg>
         </button>
@@ -57,7 +59,7 @@
         </div>
 
         <div class="mt-4 grid grid-cols-2 gap-2">
-            <a href="{{ route('products.show', $product['slug'] ?? 'product') }}" class="inline-flex items-center justify-center border border-slate-300 px-3 py-2.5 text-xs font-bold text-slate-700 transition-colors hover:border-emerald-600 hover:text-emerald-700">View Product</a>
+            <a href="{{ route('products.show', $product['slug'] ?? 'product') }}" class="inline-flex items-center justify-center border border-slate-300 px-3 py-2.5 text-xs font-bold text-slate-700 transition-colors hover:border-emerald-600 hover:text-emerald-700">{{ __('common.view_product') }}</a>
             <a href="{{ route('products.index') }}" class="inline-flex items-center justify-center gap-1 bg-emerald-700 px-3 py-2.5 text-xs font-bold text-white transition-colors hover:bg-emerald-800">
                 <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 4h2l2.1 10.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 2-1.6L20 8H6"/></svg>
                 Add to Cart
